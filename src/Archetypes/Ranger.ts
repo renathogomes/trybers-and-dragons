@@ -1,7 +1,7 @@
 import { EnergyType } from '../Energy';
-import Archetypes from './Arquetypes';
+import Archetype from './Arquetype';
 
-class Ranger extends Archetypes {
+class Ranger extends Archetype {
   private static _instance: 0;
   private _energyType: EnergyType = 'stamina';
 

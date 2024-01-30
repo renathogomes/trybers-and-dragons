@@ -1,4 +1,4 @@
-import Archetypes from './Arquetypes';
+import Archetypes from './Arquetype';
 import Mage from './Mage';
 import Warrior from './Warrior';
 import Necromancer from './Necromancer';
