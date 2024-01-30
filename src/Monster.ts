@@ -1,5 +1,3 @@
-// src/Monster.ts
-
 import { SimpleFighter } from './Fighter';
 
 class Monster implements SimpleFighter {
@@ -19,10 +17,6 @@ class Monster implements SimpleFighter {
     return this._strength;
   }
 
-  attack(enemy: SimpleFighter): void {
-    enemy.receiveDamage(this._strength);
-  }
-
   receiveDamage(attackPoints: number): number {
     this._lifePoints -= attackPoints;
 
@@ -31,6 +25,10 @@ class Monster implements SimpleFighter {
     }
 
     return this._lifePoints;
+  }
+
+  attack(enemy: SimpleFighter): void {
+    enemy.receiveDamage(this._strength);
   }
 }
 
