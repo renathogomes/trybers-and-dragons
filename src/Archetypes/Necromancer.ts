@@ -1,4 +1,5 @@
 import { EnergyType } from '../Energy';
+
 import Archetype from './Arquetype';
 
 class Necromancer extends Archetype {
@@ -15,7 +16,7 @@ class Necromancer extends Archetype {
   }
 
   static createdArchetypeInstances(): number {
-    return Necromancer._instance;
+    return this._instance;
   }
 }
 

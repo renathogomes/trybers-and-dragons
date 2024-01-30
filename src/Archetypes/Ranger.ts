@@ -15,7 +15,7 @@ class Ranger extends Archetype {
   }
 
   static createdArchetypeInstances(): number {
-    return Ranger._instance;
+    return this._instance;
   }
 }
 
