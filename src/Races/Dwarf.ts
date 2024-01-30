@@ -8,7 +8,7 @@ class Dwarf extends Race {
     Dwarf._counter += 1;
   }
 
-  static createdRacesInstances(): number {
+  static override createdRacesInstances(): number {
     return Dwarf._counter;
   }
 
